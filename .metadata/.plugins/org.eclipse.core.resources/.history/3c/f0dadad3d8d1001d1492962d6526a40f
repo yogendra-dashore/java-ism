@@ -1,0 +1,52 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<%
+		String error = (String)request.getAttribute("error");
+	%>
+
+<form action="Registration" method="post" align="center">
+
+FirstName : <input type="text" name="FirstName" placeholder="Enter FirstName"><br><br>
+LastName : <input type="text" name="LastName" placeholder="Enter LastName">
+<p>Gender:</p>
+  <input type="radio" id="gender1" name="Gender" value="Male">Male
+  <input type="radio" id="gender2" name="Gender" value="Female">Female
+
+Email : <input type="text" name="Email" placeholder="Email">
+Password : <input type="Password" name="Password" placeholder="Enter name">
+ComfirmPassword : <input type="ComfirmPassword" name="ComfirmPassword" placeholder="Enter ComfirmPassword">
+<label for="City">City:</label>
+    <select id="city" name="city">
+    <option value="Jalgaon">Jalgaon</option>
+    <option value="Pune">Pune</option>
+    <option value="Mumbai">Mumbai</option>
+    <option value="Ahmedabad">Ahmedabad</option>
+  </select>
+
+          
+  <p>Hobby:</p>
+  <input type="radio" id="hobbi1" name="Hobbi" value="Cricket">Cricket
+  
+  <input type="radio" id="hobbi2" name="Hobbi" value="60">Singing
+ 
+  <input type="radio" id="hobbi3" name="Hobbi" value="100">Bike Ridding
+ 
+ 
+</table>
+<br><br>
+<input type="submit" value="Login">
+
+
+</form>
+<%=error%> 
+
+</body>
+</html>

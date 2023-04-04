@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="yogi" method="post"></form>
+FirstName : <input text="text" name="FirstName" placeholder="Enter name"> <br><br>
+email : <input text="text" name="Email" placeholder="Email"> <br><br>
+Password : <input text="password" name="Password" placeholder="Enter name">
+
+<input type="submit" value="Submit">
+
+
+
+
+
+
+</body>
+</html>

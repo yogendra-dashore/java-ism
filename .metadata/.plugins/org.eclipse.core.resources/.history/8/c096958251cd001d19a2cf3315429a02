@@ -1,0 +1,7 @@
+package com.google.controller;
+
+import javax.servlet.http.HttpServlet;
+
+public class SinghupController extends HttpServlet  {
+
+}

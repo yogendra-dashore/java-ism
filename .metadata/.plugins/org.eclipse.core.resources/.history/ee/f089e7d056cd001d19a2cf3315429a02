@@ -1,0 +1,25 @@
+package com.Calcy.Controller;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class Calculator extends HttpServlet {
+
+	@Override
+	protected void service(HttpServletRequest request, HttpServletResponse response)  {
+		String number1= request.getParameter("number1");
+		String number2= request.getParameter("number2");
+		
+		int answer=Integer.parseInt(number1)+Integer.parseInt(number2);
+		
+		System.out.println("number1"+ number1);
+		System.out.println("number2"+ number2);
+		System.out.println(answer);;
+		
+		
+	}
+}

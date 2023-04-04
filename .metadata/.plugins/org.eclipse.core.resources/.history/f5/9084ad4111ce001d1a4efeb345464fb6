@@ -1,0 +1,39 @@
+package com.Util;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class ExampleArray {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter user array");
+		
+		int[] a = new int[10];
+		
+		for(int i=0;i<a.length;i++) {
+			
+			a[i] = sc.nextInt();
+		}
+		int even[] = new int[10];
+		int odd[] = new int[10];
+		int n=0;
+		int n1=0;
+		
+		for(int i=0;i<a.length;i++) {
+			if(a[i]%2==0) {
+				even[n++]=a[i];
+			}
+			else {
+				odd[n1++] = a[i];
+			}
+			System.out.println("This is even array");
+			System.out.println(Arrays.toString(even));
+			System.out.println(Arrays.toString(odd));
+			
+		}
+
+	}
+
+}

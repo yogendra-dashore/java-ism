@@ -1,0 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<%
+		String error = (String)request.getAttribute("error");
+	%>
+
+<form action="Registration" method="post">
+FirstName : <input text="text" name="FirstName" placeholder="Enter FirstName"> <br><br>
+LastName : <input text="text" name="LastName" placeholder="Enter LastName"> <br><br>
+Gender : <input text="text" name="Gender" placeholder="Enter Gender"> <br><br>
+email : <input text="text" name="email" placeholder="Email"> <br><br>
+Password : <input text="password" name="password" placeholder="Enter name">
+ComfirmPassword : <input text="text" name="ComfirmPassword" placeholder="Enter ComfirmPassword"> <br><br>
+City : <input text="text" name="City" placeholder="Enter City"> <br><br>
+Hobby : <input text="text" name="Hobby" placeholder="Enter Hobby"> <br><br>
+
+<br><br>
+<input type="submit" value="Login">
+</form>
+<%=error%> 
+
+</body>
+</html>

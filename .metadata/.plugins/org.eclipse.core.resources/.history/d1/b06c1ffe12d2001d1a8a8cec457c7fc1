@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="login" method="post">
+FirstName : <input text="text" name="firstName" placeholder="Enter name"> <br><br>
+email : <input text="text" name="email" placeholder="Email"> <br><br>
+Password : <input text="password" name="password" placeholder="Enter name">
+<br><br>
+<input type="submit" value="Submit">
+
+</form>
+</body>
+</html>
